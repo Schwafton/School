@@ -1,0 +1,31 @@
+public class Queue {
+static pizza head = null;
+static pizza tail = null;
+public static void enqueue(pizza thispizza){
+if (head == null)
+head = thispizza;
+else
+tail.next = thispizza;
+tail = thispizza;
+return
+}
+public static pizza dequeue() {
+pizza pizzatodeliver = null;
+if (head != null) {
+pizzatodeliver = head;
+head = head.next;
+}
+if (head == null)
+tail = null;
+return pizzatodeliver;
+}
+public static void deliver() {
+pizza thispizza = dequeue();
+if (thispizza == null) {
+System.out.println("No deliveries pending");
+return;
+}
+System.out.println(
+"Deliver pizza with " + thispizza.ingrediants + " to " + 
+thispizza.address);
+}
