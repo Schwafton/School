@@ -1,0 +1,8 @@
+Charlotte's Web,E.B White,book,notAvailable,CurrentBestSeller,NotRequested,5,none
+Harry Potter and the Sorcerer's Stone,J.K. Rowling,book,Available,NotCB,NotRequested,3,none
+Charlie and the Chocolate Factory,Roald Dahl,book,Available,CurrentBestSeller,NotRequested,4,none
+The Tale of Peter Rabbit,Beatrix Potter,book,Available,NotCB,NotRequested,1,none
+Moby Dick,Herman Melville,book,Not Available,NotCB,NotRequested,2,John
+War and Peace,Leo Tolstoy,book,Available,NotCB,NotRequested,7,Pat
+Hamlet,William Shakespeare,book,Not Available,NotCB,NotRequested,1,Pat
+Cars,Dan Ferrari,magazine,Available,NotCB,NotRequested,20,none

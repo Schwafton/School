@@ -1,0 +1,8 @@
+Charlotte's Web,E.B White,book,Not Available,CurrentBestSeller,NotRequested,5,3932534,08-05-2022,08-19-2022
+Harry Potter and the Sorcerer's Stone,J.K. Rowling,book,Not Available,NotCB,NotRequested,3,3932534,08-05-2022,08-26-2022
+Charlie and the Chocolate Factory,Roald Dahl,book,Not Available,CurrentBestSeller,NotRequested,4,3932534,08-01-2022,08-05-2022
+The Tale of Peter Rabbit,Beatrix Potter,book,Not Available,NotCB,NotRequested,1,3932534,08-05-2022,08-26-2022
+Moby Dick,Herman Melville,book,Not Available,NotCB,NotRequested,2,39325,08-05-2022,08-26-2022
+War and Peace,Leo Tolstoy,book,Available,NotCB,NotRequested,7,none,checkDate,returnDate
+Hamlet,William Shakespeare,book,Not Available,NotCB,notRequested,1,Pat,08-01-2022,08-04-2022
+Cars,Dan Ferrari,magazine,Available,NotCB,notRequested,20,none,check,returnDate
