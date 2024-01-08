@@ -1,0 +1,1 @@
+{"error":"lstat /home/runner/UNACCEPTABLE-WORDS/.cache/typescript/4.4/node_modules/types-registry/package.json.1842966864: no such file or directory","level":"error","msg":"unable to stat .cache/typescript/4.4/node_modules/types-registry/package.json.1842966864","time":"2024-01-08T13:20:22Z"}

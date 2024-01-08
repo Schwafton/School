@@ -1,0 +1,25 @@
+PutItem 3
+PutItem 201
+PutItem 60
+PutItem 30
+PutItem 45
+PrintTree
+GetItem 201
+DeleteItem 3
+DeleteItem 60
+PrintTree
+MakeEmpty
+PrintTree
+PutItem -10
+PutItem -150
+PutItem 4
+PutItem 300
+PutItem 45
+PutItem -50
+PutItem 200
+PrintTree
+GetItem -150
+DeleteItem -10
+DeleteItem 45
+PrintTree
+Quit

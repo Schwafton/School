@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Answer</title>
+  </head>
+  <body>
+    <p>Enter some text to see if it contains any unaccepted words.</p>
+        <form>
+            <input type="text" name="text" id="text"><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    <script>
+      words = ["cheese", "shark", "moist", "blep", "five", "green", "Nigeria", "Steve", "kiss", "snooze"];
+      let input = document.getElementById("text");
+      let button = document.getElementById("submit").addEventListener("click", function() {
+          let string = input.value;
+          for (let i of words) {
+              if ((string.toLowerCase()).includes(i.toLowerCase())) {
+                  alert('UNACCEPTABLE!!!');
+              }
+          }
+      });
+    </script>
+  </body>
+</html>

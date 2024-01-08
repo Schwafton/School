@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quiz 2 Question 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+  <body>
+    <main>
+      <div style="width: 100%;">
+        <h1>Credit Card Details</h1>
+        <form action="#" method="post">
+          <div style="width: 50%; height: 100px; float: left;">
+            <h2>Card Type:</h2>
+            <input type="radio" id="mc" name="cc" value="5" onclick="">
+            <label for="mc">Mastercard</label><br>
+            <input type="radio" id="visa" name="cc" value="4" onclick="">
+            <label for="visa">Visa</label><br>
+            <input type="radio" id="ae" name="cc" value="3" onclick="">
+            <label for="ae">American Express</label><br>
+            <input type="radio" id="dc" name="cc" value="6" onclick="">
+            <label for="dc">Discover</label><br><br><br>
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" autocomplete="address" maxlength="300"></textarea><br><br>
+            <input type="button" id="submit" value="Submit" onclick="orderPlaced()">
+            <input type="reset" value="Reset"/>
+          </div>
+          <div style="margin-left: 50%; height: 100px;">
+              <br><br><br>        
+              <label for="cc-number">Card Number:</label>
+              <input id="ccn" name="ccn" autocomplete="ccn" inputmode="numeric" maxlength="50" pattern="[\d ]{10,30}"><br>
+              <label for="cc-exp">Expiry date:</label>
+              <input id="cc-exp" name="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5">
+          </div>
+        </div>
+      </form>
+      <script>
+        const ccn = document.getElementById('ccn')
+        ccn.addEventListener('keyup', function() {
+          var num = this.value;
+          if(num) {
+            if(num==3) {
+              document.getElementById('ae').checked = true;
+            }
+            if(num==4) {
+              document.getElementById('visa').checked = true;
+            }
+            if(num==5) {
+              document.getElementById('mc').checked = true;
+            }
+            if(num==6) {
+              document.getElementById('dc').checked = true;
+            }
+          }
+        })
+        $('input[name="cc"]').on('change', function() {
+          $('input[id="ccn"]').val($(this).val());
+        });
+        $('input[id="submit"]').on('click', function() {
+          $("#submit").attr('value', 'Order placed successfully.');
+        });
+      </script>
+    </main>
+  </body>
+</html>

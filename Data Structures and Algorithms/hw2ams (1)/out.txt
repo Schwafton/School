@@ -1,0 +1,25 @@
+t1
+3 is inserted
+201 is inserted
+60 is inserted
+30 is inserted
+45 is inserted
+3 30 45 60 201 
+201 found in list.
+3 is deleted
+60 is deleted
+30 45 201 
+Tree has been made empty.
+
+-10 is inserted
+-150 is inserted
+4 is inserted
+300 is inserted
+45 is inserted
+-50 is inserted
+200 is inserted
+-150 -50 -10 4 45 200 300 
+-150 found in list.
+-10 is deleted
+45 is deleted
+-150 -50 4 200 300 
